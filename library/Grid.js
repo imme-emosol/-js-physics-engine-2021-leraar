@@ -1,16 +1,14 @@
 class Grid {
     constructor(){
-        context.strokeStyle = "#000000";
+        context.strokeStyle = "rgba(0,0,200,0.2)";
         //strokesHorizontal
         for(let i=0; i<height;i++){
             if(i%20 == 0){
                 context.beginPath();
                 if (i%100 == 0){
                     context.lineWidth = "5";
-                    console.log(i,'test i')
                 } else {
                     context.lineWidth = "1";
-                    console.log(i,'dun')
                 }
                 
                 context.moveTo(0,i);
@@ -22,6 +20,22 @@ class Grid {
         }
 
         //strokesVertical
+        for(let i=0; i<width;i++){
+            if(i%20 == 0){
+                context.beginPath();
+                if (i%100 == 0){
+                    context.lineWidth = "5";
+                } else {
+                    context.lineWidth = "1";
+                }
+                
+                context.moveTo(i,0);
+                context.lineTo(i,height);
+                context.stroke();
+                context.closePath();
+            }             
+
+        }
     }
    
 }
