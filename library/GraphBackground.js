@@ -1,5 +1,10 @@
 class GraphBackground {
+
     constructor(){
+        //
+    }
+
+    draw(){
         context.strokeStyle = "rgba(0,0,200,0.2)";
         //strokesHorizontal
         for(let i=0; i<height;i++){

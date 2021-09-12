@@ -7,4 +7,5 @@ const height = window.innerHeight;
 canvas.width = width;
 canvas.height = height;
 
-let GraphBackground = new GraphBackground()
+let background = new GraphBackground()
+background.draw();
