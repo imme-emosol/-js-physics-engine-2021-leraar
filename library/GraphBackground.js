@@ -1,4 +1,4 @@
-class Grid {
+class GraphBackground {
     constructor(){
         context.strokeStyle = "rgba(0,0,200,0.2)";
         //strokesHorizontal
