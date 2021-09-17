@@ -1,7 +1,15 @@
-body{
-    background: white;
-}
+    body{
+        background: grey;
+    }
+    canvas{
+        background: darkslateblue;
+    }
 
-canvas{
-    background: aliceblue;
+@media (prefers-color-scheme: light) {
+    body{
+        background: white;
+    }
+    canvas{
+        background: aliceblue;
+    }
 }
